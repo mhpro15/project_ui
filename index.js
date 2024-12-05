@@ -285,9 +285,9 @@ function submitForm() {
       console.log("Success:", result);
       res = result.prediction.split(",")[0].substring(1);
       if (res == "np.int64(0)") {
-        res = "Low Crime Solve Rate";
+        res = "Low Case Clear Rate";
       } else {
-        res = "High Crime Solve Rate";
+        res = "High Case Clear Rate";
       }
       document.getElementById("result").innerText = res;
     })
