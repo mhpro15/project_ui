@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predictive Model Form</title>
+  </head>
+  <body>
+    <h1>Predictive Model Form</h1>
+    <form id="predictiveForm">
+      <label for="year">REPORT_YEAR:</label>
+      <select id="year" name="REPORT_YEAR" required></select
+      ><br /><br />
+
+      <label for="division">DIVISION:</label>
+      <select id="division" name="DIVISION" required></select
+      ><br /><br />
+
+      <label for="neighbourhood">NEIGHBOURHOOD:</label>
+      <select id="neighbourhood" name="NEIGHBOURHOOD" required></select
+      ><br /><br />
+
+      <label for="category">CATEGORY:</label>
+      <select id="category" name="CATEGORY" required></select
+      ><br /><br />
+
+      <label for="subtype">SUBTYPE:</label>
+      <select id="subtype" name="SUBTYPE" required></select
+      ><br /><br />
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </body>
+  <script defer src="index.js"></script>
+</html>
