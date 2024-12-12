@@ -289,7 +289,7 @@ function submitForm() {
       } else {
         res = "High Case Clear Rate";
       }
-      document.getElementById("result").innerText = res;
+      document.getElementById("result").innerText = "Predicting result: " + res;
     })
     .catch((error) => {
       console.error("Error:", error);
