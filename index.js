@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
   Object.keys(neighbourhoods).forEach((key) => {
     const option = document.createElement("option");
     option.value = parseInt(key);
-    option.text = neighbourhoods[key];
+    option.text = neighbourhoods[key] + " (" + key + ")";
     neighbourhoodSelect.appendChild(option);
   });
   years.forEach((year) => {
