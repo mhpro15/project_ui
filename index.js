@@ -282,7 +282,7 @@ function submitForm() {
   )
     .then((response) => response.json())
     .then((result) => {
-      console.log("Success:", result);
+      console.log("Success:", result?.prediction.split(",")[0]);
       res = result.prediction.split(",")[0].substring(1);
       if (res == "np.int64(0)") {
         res = "Low Case Clear Rate";
